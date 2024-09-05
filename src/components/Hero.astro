@@ -1,0 +1,25 @@
+---
+import ButtonReserva from './ui/ButtonReserva.astro';
+import { Image } from 'astro:assets';
+---
+
+<section class="px-8 pt-12 flex flex-col gap-8 justify-center">
+  <h1 class="text-6xl font-extrabold text-center text-[#2C8C9A]">
+    Jokana <span class="text-[#F69602]">Trip</span>
+  </h1>
+  <div class="flex flex-col items-center">
+    <div class="flex flex-col max-w-6xl gap-10">
+      <img
+        src="https://i.imgur.com/OxtkaO1.png"
+        alt=""
+        class="max-h-[384px] sm:max-h-[450px] object-cover rounded-2xl md:w-[768px] lg:w-[1024px]"
+      />
+      <div class="flex flex-col gap-6 md:m-auto">
+        <p class="text-[#6A9061] text-2xl font-semibold text-center">
+          "A melhor trip da sua vida, só para elas."
+        </p>
+        <ButtonReserva texto="Quero garantir minha vaga" />
+      </div>
+    </div>
+  </div>
+</section>
