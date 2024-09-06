@@ -2,8 +2,8 @@
 import programacao from '../data/programacao.json';
 ---
 
-<section class="flex flex-col pb-12 pt-20 px-10">
-  <h2 class="text-4xl text-[#2C8C9A] font-extrabold text-center pb-16">Programação:</h2>
+<section class="flex flex-col pb-8 pt-4 px-10" id="programacao">
+  <h2 class="text-4xl text-[#2C8C9A] font-extrabold text-center pb-8">Programação:</h2>
 
   {
     programacao.map((passeio) => (
@@ -11,11 +11,15 @@ import programacao from '../data/programacao.json';
         <div class="flex flex-col pb-6">
           <div>
             <div class="flex gap-4 items-center justify-center md:justify-center">
-              <p class="bg-[#F69602] font-bold text-lg rounded-lg px-8 py-1">{passeio.dia}</p>
-              <p class="bg-[#6A9061] font-bold text-lg rounded-lg px-8 py-1">{passeio.data}</p>
+              <p class="bg-[#F69602] font-bold text-lg text-white rounded-lg px-8 py-1">
+                {passeio.dia}
+              </p>
+              <p class="bg-[#6A9061] font-bold text-lg text-white rounded-lg px-8 py-1">
+                {passeio.data}
+              </p>
             </div>
             <div class="flex pt-4 justify-center items-center">
-              <h3 class="bg-[#2C8C9A] font-bold text-lg rounded-lg px-8 py-2 mb-4 text-center">
+              <h3 class="bg-[#2C8C9A] text-white font-bold text-lg rounded-lg px-8 py-2 mb-4 text-center">
                 {passeio.passeio}
               </h3>
             </div>
@@ -33,11 +37,11 @@ import programacao from '../data/programacao.json';
               class="md:w-[400px] md:h-[300px] w-[350px] h-[250px] object-cover rounded-lg"
             />
           </div>
-          <p class="text-black text-center max-w-[750px] m-auto">{passeio.textoPasseio}</p>
+          <p class="text-[#3d3d3d] text-center max-w-[750px] m-auto">{passeio.textoPasseio}</p>
         </div>
         <div class="flex flex-col gap-8 pt-8">
           <div class="flex justify-center items-center">
-            <h3 class="bg-[#5A3403] font-bold text-lg rounded-lg px-8 py-1 text-center">
+            <h3 class="bg-[#5A3403] text-white font-bold text-lg rounded-lg px-8 py-1 text-center">
               {passeio.passeioNoite}
             </h3>
           </div>
@@ -48,7 +52,7 @@ import programacao from '../data/programacao.json';
               class="md:w-[400px] md:h-[300px] w-[350px] h-[250px] object-cover rounded-lg"
             />
           </div>
-          <p class="text-black text-center max-w-[750px] m-auto">{passeio.textoPasseioNoite}</p>
+          <p class="text-[#3d3d3d] text-center max-w-[750px] m-auto">{passeio.textoPasseioNoite}</p>
         </div>
       </article>
     ))

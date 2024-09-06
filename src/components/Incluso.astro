@@ -1,3 +1,75 @@
 ---
+import ButtonReserva from './ui/ButtonReserva.astro';
 ---
 
+<section class="px-8 pb-16 flex flex-col justify-center items-center" id="preco">
+  <div>
+    <h2 class="text-4xl text-[#F69602] font-extrabold text-center pb-8">
+      O que está incluso na Jokana Trip?
+    </h2>
+    <ul class="text-[#3d3d3d] pb-8 text-center">
+      <li>• Hospedagem em Porto Seguro e Caraíva;</li>
+      <li>• Passeios exclusivos;</li>
+      <li>• Transfer de lancha para Satú;</li>
+      <li>• Guia credenciado em todos os roteiros (dia e noite);</li>
+      <li>• Transfer para in/out para o aeroporto;</li>
+      <li>• Entradas: Luau Tôa Toa e Morocha Club;</li>
+      <li>• Taxas de travessias em Arraial e Caraíva.</li>
+    </ul>
+  </div>
+  <div>
+    <h2 class="text-4xl text-[#F69602] font-extrabold text-center pb-8">O que não está incluso?</h2>
+    <ul class="text-[#3d3d3d] pb-8 text-center">
+      <li>• Passagens áreas ou rodoviárias;</li>
+      <li>• Alimentação e bebidas;</li>
+      <li>• Qualquer outra despesa que não conste no que está descrito.</li>
+    </ul>
+  </div>
+  <div>
+    <h2 class="text-4xl text-[#F69602] font-extrabold text-center pb-8">
+      Alguma restrição ou indicação?
+    </h2>
+    <p class="text-[#3d3d3d] pb-8 text-center max-w-[750px] m-auto">
+      Não há nenhuma restrição, porém entre os roteiros terão alguns com acessos não tão simples,
+      como: escadarias, embarque e desembarque em lancha, trilha na falésia, entre outros detalhes,
+      então não recomendamos para pessoas com alguma dificuldade em mobilidade.
+    </p>
+  </div>
+  <div class="pt-16 pb-8">
+    <h3
+      class="bg-[#2C8C9A] text-white font-bold text-2xl rounded-lg px-8 py-4 mb-8 text-center flex items-center justify-center gap-4"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-ticket"
+        width="44"
+        height="44"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#fff"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M15 5l0 2"></path>
+        <path d="M15 11l0 2"></path>
+        <path d="M15 17l0 2"></path>
+        <path
+          d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2"
+        ></path>
+      </svg>
+      Valores por pessoa
+    </h3>
+    <div>
+      <h3 class="border-2 rounded-lg text-[#F69602] text-center font-bold py-6">
+        R$
+        <span class="text-7xl">2997</span>
+      </h3>
+      <p class="text-[#2C8C9A] text-center pt-4 pb-2 font-bold text-4xl">12x sem juros</p>
+      <p class="text-[#F69602] text-center text-sm">10% de desconto até SETEMBRO</p>
+    </div>
+    <div class="text-[#2C8C9A] text-center"><p>16 vagas - 10 restantes</p></div>
+  </div>
+  <ButtonReserva texto="Quero garantir minha vaga" />
+</section>
