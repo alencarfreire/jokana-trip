@@ -3,7 +3,7 @@ import programacao from '../data/programacao.json';
 ---
 
 <section class="flex flex-col pb-12 pt-20 px-10">
-  <h2 class="text-4xl text-[#2C8C9A] font-extrabold text-center pb-16">Programação</h2>
+  <h2 class="text-4xl text-[#2C8C9A] font-extrabold text-center pb-16">Programação:</h2>
 
   {
     programacao.map((passeio) => (
@@ -15,7 +15,7 @@ import programacao from '../data/programacao.json';
               <p class="bg-[#6A9061] font-bold text-lg rounded-lg px-8 py-1">{passeio.data}</p>
             </div>
             <div class="flex pt-4 justify-center items-center">
-              <h3 class="bg-[#2C8C9A] font-bold text-lg rounded-lg px-8 py-1 mb-4 text-center">
+              <h3 class="bg-[#2C8C9A] font-bold text-lg rounded-lg px-8 py-2 mb-4 text-center">
                 {passeio.passeio}
               </h3>
             </div>
@@ -30,7 +30,7 @@ import programacao from '../data/programacao.json';
             <img
               src={passeio.imagem2}
               alt={passeio.passeio}
-              class="md:w-[400px] md:h-[300px] w-[300px] h-[200px] object-cover rounded-lg"
+              class="md:w-[400px] md:h-[300px] w-[350px] h-[250px] object-cover rounded-lg"
             />
           </div>
           <p class="text-black text-center max-w-[750px] m-auto">{passeio.textoPasseio}</p>
@@ -45,7 +45,7 @@ import programacao from '../data/programacao.json';
             <img
               src={passeio.imagemNoite}
               alt={passeio.passeio}
-              class="md:w-[400px] md:h-[300px] w-[300px] h-[200px] object-cover rounded-lg"
+              class="md:w-[400px] md:h-[300px] w-[350px] h-[250px] object-cover rounded-lg"
             />
           </div>
           <p class="text-black text-center max-w-[750px] m-auto">{passeio.textoPasseioNoite}</p>
