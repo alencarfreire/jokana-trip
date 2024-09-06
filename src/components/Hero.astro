@@ -1,7 +1,5 @@
 ---
 import ButtonReserva from './ui/ButtonReserva.astro';
-import { Image } from 'astro:assets';
-import HeroImage from './assets/hero-image.webp';
 ---
 
 <section class="px-8 pt-12 flex flex-col gap-8 justify-center">
@@ -10,11 +8,9 @@ import HeroImage from './assets/hero-image.webp';
   </h1>
   <div class="flex flex-col items-center">
     <div class="flex flex-col max-w-6xl gap-10">
-      <Image
-        src={HeroImage}
+      <img
+        src="./assets/hero-image.webp"
         alt="descriptive text"
-        width="1024"
-        height="384"
         class="max-h-[384px] sm:max-h-[450px] object-cover rounded-2xl md:w-[768px] lg:w-[1024px]"
       />
       <div class="flex flex-col gap-6 md:m-auto">
